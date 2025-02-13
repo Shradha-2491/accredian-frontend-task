@@ -1,0 +1,106 @@
+.benefits-main-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 50px 20px;
+}
+
+.benefits-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.blue-highlight {
+    color: #007bff;
+}
+
+.benefits-container {
+    display: flex;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Left Side - Tabs Container with Box & Shadow */
+.tabs-container {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 220px;
+}
+
+
+.tab-button {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-align: left;
+    transition: color 0.3s;
+    width: 100%;
+}
+
+.tab-button:hover,
+.tab-button.active {
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Right Side - Table */
+.table-container {
+    flex: 1;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: #1A73E859;
+    color: #1350A0;
+    padding: 12px;
+    border-bottom: 2px solid #1350A0;
+}
+
+td {
+    border: none;
+    padding: 12px;
+}
+
+@media (max-width: 768px) {
+    .benefits-title {
+        font-size: 1.5rem;
+    }
+
+    .benefits-container {
+        flex-direction: column;
+    }
+
+    .tabs-container {
+        width: 100%;
+    }
+
+    .tab-button {
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
+    td {
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,125 @@
+.referral-container {
+    padding: 60px 20px;
+    text-align: center;
+    background: #EEF5FF;
+}
+
+.referral-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 40px;
+}
+
+.referral-steps {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.referral-card {
+    box-shadow: 17px 17px 12px rgba(8, 8, 8, 0.1);
+    border-radius: 150px;
+    padding: 30px;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.referral-card:hover {
+    transform: translateY(-5px);
+}
+
+.icon-container {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+}
+
+.icon {
+    font-size: 36px;
+    color: white;
+}
+
+.blue-bg {
+    background-color: #1A73E8;
+}
+
+
+.step-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.step-text {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Refer Now Button */
+.refer-button {
+    display: inline-block;
+    background: #1A73E8;
+    color: white;
+    padding: 14px 28px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    border: 2px solid #1A73E8;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px rgba(127, 87, 241, 0.4);
+}
+
+.refer-button:hover {
+    color: white;
+    border-color: #1663c9;
+    transform: scale(1.05);
+    box-shadow: 0px 10px 25px rgba(90, 54, 232, 0.5);
+}
+
+
+.refer-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: left 0.4s ease-in-out;
+    border-radius: 10px;
+}
+
+.refer-button:hover::before {
+    left: 100%;
+}
+
+/* Centering the Refer Now Button */
+.center-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    /* Adjust as needed */
+}
+
+@media (max-width: 768px) {
+    .referral-title {
+        font-size: 1.5rem;
+
+    }
+
+    .step-text {
+        font-size: 1rem;
+    }
+}

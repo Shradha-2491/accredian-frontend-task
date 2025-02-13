@@ -1,0 +1,86 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 40px;
+    padding-bottom: 90px;
+}
+
+.get-in-touch {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #007bff;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.icon-get-in-touch {
+    font-size: 50px;
+    color: white;
+}
+
+.text {
+    text-align: left;
+    flex: 1;
+    font-size: 1.1rem;
+    color: white;
+    margin: 0 20px;
+}
+
+.text .highlight {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.btn {
+    background: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #bec0c2;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .get-in-touch {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .icon-get-in-touch {
+        font-size: 60px;
+        margin-bottom: 10px;
+    }
+
+    .text {
+        text-align: center;
+        margin: 30px 0;
+        font-size: 0.9rem;
+    }
+
+    .text .highlight {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        width: 50%;
+        padding: 12px;
+        font-size: 1rem;
+    }
+}
