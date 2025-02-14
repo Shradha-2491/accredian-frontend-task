@@ -95,3 +95,18 @@
     cursor: pointer;
     color: #777;
 }
+
+@media (max-width: 768px) {
+    .modal-left {
+        width: 0%;
+        padding: 0px;
+    }
+
+    .modal-left img {
+        display: none;
+    }
+
+    .modal-right {
+        width: 100%;
+    }
+}
